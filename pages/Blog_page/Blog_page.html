@@ -1,144 +1,285 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <link href = "css">  <!--  add later -->
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Blog</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <title>Destinations</title>
+        <link rel="stylesheet" href="Blog_page.css">
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+        
     </head>
 
 <body>
     <header>
-        <nav>
-            <navbar>
-                <navitem> Home </navitem>
-                <navitem> Destinations </navitem>
-                <navitem> Blog </navitem>
-                <navitem> Gallery </navitem>
-                <navitem> FAQs </navitem>
-                <navitem> Contact Us </navitem>
-            </navbar>
+        <nav class="navbar">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="/pages/home_page/home_page.html">Travel Sis</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href="/pages/home_page/home_page.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/pages/destinationList/destinationList.html">Destinations</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Gallery</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">FAQs</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/pages/contact_us/contact_us.html">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
         </nav>
-        <h1>Travel Sis</h1>
-
-
-
-
-       
- 
     </header>
 
 
 
-    <div class="about">
-        <h2>About The Blog</h2>
-        <p>
-          Welcome to Travel Sis! This blog is your ultimate guide to traveling the world without breaking the bank. 
-          Whether you are a seasoned adventurer or a first-time explorer, we are here to inspire, inform, and help you make 
-          the most of your travels. From budget tips and destination guides to hidden gems and unique experiences, 
-          we cover it all. Join us as we navigate the globe, one affordable adventure at a time!
-        </p>
+
+
+
+    <div class="jumbotron jumbotron-fluid" >
+
+        <div class="container">
+          <h1 class="display-4">About The Blog</h1>
+          <p class="lead">Welcome to Travel Sis! This blog is your ultimate guide to traveling the world without breaking the bank. 
+            Whether you are a seasoned adventurer or a first-time explorer, we are here to inspire, inform, and help you make 
+            the most of your travels. From budget tips and destination guides to hidden gems and unique experiences, 
+            we cover it all. Join us as we navigate the globe, one affordable adventure at a time!</p>
+        </div>
       </div>
       
-    <h2> Articles</h2>
-
-        <div class="row">
-                    <div class="card">
-                        <h2>Traveling with budget</h2>
-                        <h5>low on budget and want to travel? this article is for you!</h5>
-                        <img src="images\Travel.jpg" alt="Travel" style="height:100%; width:100%; object-fit:cover;">
-                        <p>Traveling on a budget doesn't mean compromising on adventure or experiences. With careful planning and smart choices, you can explore the world without breaking the bank. From finding affordable accommodations to discovering free or low-cost activities, there are countless ways to make the most of your journey. Let's dive into tips and tricks that will help you travel smarter and stretch your dollars further!</p>
-                    </div>
-
-                    <div class="card">
-                        <h2>Egypt to japan</h2>
-                        <h5>Egypt to japan without flying, Omar Nok a blogger who traveled from egypt to japan but without flying!</h5>
-                        <img src="images/Travel.jpg" alt="Travel" style="height:100%; width:100%; object-fit:cover;">
-                        <p>  Omar Nok, a passionate travel enthusiast, embarked on an extraordinary journey from Egypt to Japan without taking a single flight! 
-                            His unique adventure took him across deserts, mountains, and seas, relying on trains, buses, and boats. Along the way, he explored 
-                            diverse cultures, made unforgettable memories, and proved that the journey itself can be just as rewarding as the destination. 
-                            This is a story of resilience, creativity, and the sheer joy of discovery.</p>
-                    </div>
-
-                    <div class="card">
-                        <h2>Beyond the pyramids</h2>
-                        <h5>Visting Egypt sounds very fun, this article will be your guide there!</h5>
-                        <img src="images/Travel.jpg" alt="Travel" style="height:100%; width:100%; object-fit:cover;">
-                        <p>
-                            Egypt is renowned for its iconic pyramids, but there's so much more to explore beyond these ancient wonders. 
-                            From the bustling streets of Cairo to the tranquil waters of the Nile, Egypt offers a unique blend of history, 
-                            culture, and natural beauty. Discover hidden gems like the vibrant markets of Khan el-Khalili, the serene oases 
-                            of Siwa, and the stunning Red Sea resorts. Whether you're a history buff, a nature lover, or an adventure seeker, 
-                            this guide will help you uncover the magic of Egypt beyond the pyramids!
-                          </p>
-                    </div>
-
-
-                    <div class="card">
-                        <h2>Honeymoon in Thaialnd</h2>
-                        <h5>Thaialnd is a magical counrty for Honeymoon</h5>
-                        <img src="images/Travel.jpg" alt="Travel" style="height:100%; width:100%; object-fit:cover;">
-                        <p>
-                            Thailand is the perfect destination for a dreamy honeymoon. With its pristine beaches, lush jungles, and vibrant cities, 
-                            the country offers an unforgettable mix of romance and adventure. Explore the crystal-clear waters of Phuket, indulge in 
-                            luxury resorts in Koh Samui, or take a sunset cruise in Krabi. Don’t miss the enchanting temples of Chiang Mai or the lively 
-                            markets of Bangkok. Whether you are looking for relaxation, cultural experiences, or thrilling activities, Thailand has it all 
-                            to make your honeymoon magical.
-                          </p>
-                    </div>
+      <h2 class="first-title">ARTICLES</h2>
 
 
 
-                    <div class="card">
-                        <h2>Exploring Italy</h2>
-                        <h5>: Where History Meets Romance, Exploring the Best of Italy</h5>
-                        <img src="images/Travel.jpg" alt="Travel" style="height:100%; width:100%; object-fit:cover;">
-                        <p>
-                            Italy is the ultimate destination for those who crave a mix of rich history, breathtaking landscapes, and unforgettable romance. 
-                            From the timeless ruins of Rome to the enchanting canals of Venice, and the rolling hills of Tuscany, Italy offers a journey through 
-                            art, culture, and cuisine like no other. Whether you're exploring ancient ruins, savoring world-class wine, or strolling through 
-                            charming villages, Italy promises a truly immersive experience that will capture your heart and leave you wanting more.
-                          </p>
+    <section id="gallery">
+      <div class="container">
+          <div class="row">
+              <div class="col-lg-4 mb-4">
+                  <div class="card">
+                      <img src="../../images/passport.jpg" class="card-img-top" alt="travel">
+                      <div class="card-body">
+                          <h3 class="card-title">Traveling with budget</h3>
+                          <h5>Low on budget and want to travel? This article is for you!</h5>
+                          <p class="card-text">Traveling on a budget doesn't mean compromising on adventure or experiences. With...</p>
+                          <p class="card-text"><small class="text-muted">Author: Will Smith</small></p>
+                          <a href="#" class="btn btn-outline-success btn-sm" data-toggle="modal" data-target="#modal1">Read More</a>
                           
+                      </div>
+                  </div>
+              </div>
+              <div class="col-lg-4 mb-4">
+                  <div class="card">
+                      <img src="../../images/japan.jpg" class="card-img-top" alt="travel">
+                      <div class="card-body">
+                          <h3 class="card-title">Egypt to Japan</h3>
+                          <h5>Egypt to Japan without flying, Omar Nok a blogger who traveled from Egypt to Japan but without flying!</h5>
+                          <p class="card-text">Omar Nok, a passionate travel enthusiast, embarked on an extraordinary journey from Egypt to....</p>
+                          <p class="card-text"><small class="text-muted">Maya Tarek</small></p>
+                          <a href="#" class="btn btn-outline-success btn-sm" data-toggle="modal" data-target="#modal2">Read More</a>
+                          
+                      </div>
+                  </div>
+              </div>
+              <div class="col-lg-4 mb-4">
+                  <div class="card">
+                      <img src="../../images/egypt2.jpg" class="card-img-top" alt="travel">
+                      <div class="card-body">
+                          <h3 class="card-title">Beyond the pyramids</h3>
+                          <h5>Visiting Egypt sounds very fun, this article will be your guide there!</h5>
+                          <p class="card-text">Egypt is renowned for its iconic pyramids, but there's so much more to...</p>
+                          <p class="card-text"><small class="text-muted">Author: Wessam Mohamed</small></p>
+                          <a href="#" class="btn btn-outline-success btn-sm" data-toggle="modal" data-target="#modal3">Read More</a>
+                          
+                      </div>
+                  </div>
+              </div>
+              <div class="col-lg-4 mb-4">
+                  <div class="card">
+                      <img src="../../images/thailand.jpg" class="card-img-top" alt="travel">
+                      <div class="card-body">
+                          <h3 class="card-title">Honeymoon in Thailand</h3>
+                          <h5>Thailand is a magical country for Honeymoon</h5>
+                          <p class="card-text">Thailand is the perfect destination for a dreamy honeymoon. With its pristine beaches, lush jungles, and...</p>
+                          <p class="card-text"><small class="text-muted">Author: Habiba Mekay</small></p>
+                          <a href="#" class="btn btn-outline-success btn-sm" data-toggle="modal" data-target="#modal4">Read More</a>
+                          
+                      </div>
+                  </div>
+              </div>
+              <div class="col-lg-4 mb-4">
+                  <div class="card">
+                      <img src="../../images/italy.jpg" class="card-img-top" alt="travel">
+                      <div class="card-body">
+                          <h3 class="card-title">Exploring Italy</h3>
+                          <h5>Where History Meets Romance, Exploring the Best of Italy</h5>
+                          <p class="card-text">Italy is the ultimate destination for those who crave a mix of rich history, breathtaking landscapes, and...</p>
+                          <p class="card-text"><small class="text-muted">Author: John Monolo</small></p>
+                          <a href="#" class="btn btn-outline-success btn-sm" data-toggle="modal" data-target="#modal5">Read More</a>
+                         
+                      </div>
+                  </div>
+              </div>
+
+
+
+              <div class="col-lg-4 mb-4">
+                <div class="card">
+                    <img src="../../images/greece2.jpg" class="card-img-top" alt="Greece">
+                    <div class="card-body">
+                        <h3 class="card-title">Discovering the Wonders of Greece</h3>
+                        <h5>A Journey Through Ancient History</h5>
+                        <p class="card-text">Explore Greece’s iconic landmarks, ancient ruins, and breathtaking landscapes...</p>
+                        <p class="card-text"><small class="text-muted">Author: Sofia Papadopoulos</small></p>
+                        <a href="#" class="btn btn-outline-success btn-sm" data-toggle="modal" data-target="#modal6">Read More</a>
+      
                     </div>
+                </div>
             </div>
+            
+            <div class="col-lg-4 mb-4">
+                <div class="card">
+                    <img src="../../images/japan2.jpg" class="card-img-top" alt="Japan">
+                    <div class="card-body">
+                        <h3 class="card-title">A Glimpse into Japan’s Culture</h3>
+                        <h5>From Tokyo to Kyoto</h5>
+                        <p class="card-text">Uncover the beauty of Japan’s mix of modern cities and serene temples...</p>
+                        <p class="card-text"><small class="text-muted">Author: Akira Tanaka</small></p>
+                        <a href="#" class="btn btn-outline-success btn-sm" data-toggle="modal" data-target="#modal7">Read More</a>
+                       
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-4 mb-4">
+                <div class="card">
+                    <img src="../../images/braziliancarnival.jpg" class="card-img-top" alt="Brazil">
+                    <div class="card-body">
+                        <h3 class="card-title">Brazilian Carnival</h3>
+                        <h5>The Heartbeat of Rio de Janeiro</h5>
+                        <p class="card-text">Dive into the vibrant celebration of color, dance, and music at the Rio Carnival...</p>
+                        <p class="card-text"><small class="text-muted">Author: Carlos Mendes</small></p>
+                        <a href="#" class="btn btn-outline-success btn-sm" data-toggle="modal" data-target="#modal8">Read More</a>
+                       
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-4 mb-4">
+                <div class="card">
+                    <img src="../../images/morocco.jpg" class="card-img-top" alt="Morocco">
+                    <div class="card-body">
+                        <h3 class="card-title">The Magic of Morocco</h3>
+                        <h5>Exploring the Souks of Marrakech</h5>
+                        <p class="card-text">Take a journey through Morocco’s bustling markets and tranquil deserts...</p>
+                        <p class="card-text"><small class="text-muted">Author: Leila Badr</small></p>
+                        <a href="#" class="btn btn-outline-success btn-sm" data-toggle="modal" data-target="#modal9">Read More</a>
+                        
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-4 mb-4">
+                <div class="card">
+                    <img src="../../images/kenya.jpg" class="card-img-top" alt="Kenya">
+                    <div class="card-body">
+                        <h3 class="card-title">A Safari Adventure in Kenya</h3>
+                        <h5>Experience the African Wildlife</h5>
+                        <p class="card-text">A guide to Kenya’s national parks, wildlife safaris, and rich cultural heritage...</p>
+                        <p class="card-text"><small class="text-muted">Author: Samuel Njoroge</small></p>
+                        <a href="#" class="btn btn-outline-success btn-sm" data-toggle="modal" data-target="#modal10">Read More</a>
+                        
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-4 mb-4">
+                <div class="card">
+                    <img src="../../images/italy2.jpg" class="card-img-top" alt="Italy">
+                    <div class="card-body">
+                        <h3 class="card-title">The Best of Italy</h3>
+                        <h5>Art, History, and Culinary Delights</h5>
+                        <p class="card-text">From Rome to Venice, explore Italy's world-famous art, history, and food...</p>
+                        <p class="card-text"><small class="text-muted">Author: John Monolo</small></p>
+                        <a href="#" class="btn btn-outline-success btn-sm" data-toggle="modal" data-target="#modal11">Read More</a>
+                      
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-4 mb-4">
+                <div class="card">
+                    <img src="../../images/newzealand.jpg" class="card-img-top" alt="New Zealand">
+                    <div class="card-body">
+                        <h3 class="card-title">New Zealand’s Natural Beauty</h3>
+                        <h5>A Guide to Its Most Scenic Spots</h5>
+                        <p class="card-text">Discover New Zealand’s breathtaking landscapes, from beaches to mountains...</p>
+                        <p class="card-text"><small class="text-muted">Author: Emily Williams</small></p>
+                        <a href="#" class="btn btn-outline-success btn-sm" data-toggle="modal" data-target="#modal12">Read More</a>
+                        
+                    </div>
+                </div>
+            </div>
+            
+
+
+          </div>
+      </div>
+  </section>
+
+  <div id="modal-container"></div> <!-- for modal loading-->
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="Blog_script.js"></script>
 
 
    
-        <h2> Tips </h2>
+  <h2 class="second-title">TIPS</h2>
 
-        <div class="Tips">
-            <h2>do your research before!</h2>
-            <p>
-                Doing thorough research before your trip can make all the difference in your travel experience. Learn about local customs, culture, weather conditions, and any important travel advisories. Researching your destination can also help you discover hidden gems, local attractions, and affordable accommodations that might not be widely advertised. Understanding the local transportation system, safety tips, and currency exchange rates can save you time and money, ensuring a smoother and more enjoyable trip. Take the time to plan, and your adventure will be all the more rewarding!
 
-            </p>
-
+        <div class="card-deck">
+            <div class="card">
+              <img src="../../images/plan.jpg" class="card-img-top" alt="travel">
+              <div class="card-body">
+                <h5 class="card-title">do your research before!</h5>
+                <p class="card-text">Doing thorough research before your trip can make all the difference in your travel experience. Learn about local customs, culture, weather conditions, and any important travel advisories. Researching your destination can also help you discover hidden gems, local attractions, and affordable accommodations that might not be widely advertised. Understanding the local transportation system, safety tips, and currency exchange rates can save you time and money, ensuring a smoother and more enjoyable trip. Take the time to plan, and your adventure will be all the more rewarding!
+                </p>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+              </div>
+            </div>
+            <div class="card">
+              <img src="../../images/packing.jpg" class="card-img-top" alt="travel">
+              <div class="card-body">
+                <h5 class="card-title">Pack Smart!</h5>
+                <p class="card-text">Packing light and smart is key to enjoying your travels without the burden of heavy luggage. Choose versatile clothing that can be mixed and matched, and be sure to pack only the essentials. Consider the weather and activities you'll be doing, and pack accordingly. Don't forget important items like travel adapters, toiletries, and your passport. Packing strategically can help you avoid baggage fees, minimize delays, and make your trip more comfortable and hassle-free.
+                </p>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+              </div>
+            </div>
+            <div class="card">
+              <img src="../../images/food.jpg" class="card-img-top" alt="travel">
+              <div class="card-body">
+                <h5 class="card-title">Embrace Local Cuisine</h5>
+                <p class="card-text">One of the best ways to experience a new culture is through its food. Be adventurous and try local dishes that are unique to the destination. Whether it's street food, traditional recipes, or specialties from local markets, tasting new foods is a great way to connect with the culture. But remember to check for any food allergies and always ensure the food is prepared safely. Enjoying the flavors of the region will make your trip unforgettable!.</p>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+              </div>
+            </div>
+            <div class="card">
+              <img src="../../images/Travel.jpg" class="card-img-top" alt="travel">
+              <div class="card-body">
+                  <h5 class="card-title">Stay Flexible</h5>
+                  <p class="card-text">While it's important to plan ahead, it's also crucial to stay flexible during your travels. Unexpected changes in plans—such as weather delays or closed attractions—are common, and being adaptable can help you make the most of these situations. Whether it's exploring a new area or trying an unexpected activity, being open to change can lead to some of your most memorable experiences.
+                </p>
+                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+              </div>
+              
           </div>
 
-          <div class="Tips">
-            <h2>Pack Smart!</h2>
-            <p>
-                Packing light and smart is key to enjoying your travels without the burden of heavy luggage. Choose versatile clothing that can be mixed and matched, and be sure to pack only the essentials. Consider the weather and activities you'll be doing, and pack accordingly. Don't forget important items like travel adapters, toiletries, and your passport. Packing strategically can help you avoid baggage fees, minimize delays, and make your trip more comfortable and hassle-free.
-            </p>
-        </div>
-        
-        <div class="Tips">
-            <h2>Embrace Local Cuisine</h2>
-            <p>
-                One of the best ways to experience a new culture is through its food. Be adventurous and try local dishes that are unique to the destination. Whether it's street food, traditional recipes, or specialties from local markets, tasting new foods is a great way to connect with the culture. But remember to check for any food allergies and always ensure the food is prepared safely. Enjoying the flavors of the region will make your trip unforgettable!
-            </p>
-        </div>
-        
-        <div class="Tips">
-            <h2>Stay Flexible</h2>
-            <p>
-                While it's important to plan ahead, it's also crucial to stay flexible during your travels. Unexpected changes in plans—such as weather delays or closed attractions—are common, and being adaptable can help you make the most of these situations. Whether it's exploring a new area or trying an unexpected activity, being open to change can lead to some of your most memorable experiences.
-            </p>
-        </div>      
+       
 
-
-
-    <a class="button" href="pages\Blog_page.html" >MORE FROM THE BLOG</a>
+    <!-- <a class="button" href="pages\Blog_page.html" >MORE FROM THE BLOG</a> -->
 
 
 

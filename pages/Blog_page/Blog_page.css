@@ -1,0 +1,68 @@
+.jumbotron {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../images/background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 50px;
+}
+
+.jumbotron h1 {
+    text-shadow: 2px 2px 2px black; 
+}
+
+.jumbotron p {
+    text-shadow: 1px 1px 2px black; 
+}
+
+
+.first-title{
+    text-align: center;
+    font-size: 2.5rem;
+    color: #333;  
+    font-weight: bold;
+    margin-bottom: 30px;  /* space below the title */
+    letter-spacing: 2px;  /* space between letters */
+    font-family: 'Arial', sans-serif;  
+   
+
+}
+
+.second-title{
+
+    text-align: center;
+    font-size: 2.5rem;
+    color: #333;  
+    font-weight: bold;
+    margin-bottom: 30px; 
+    letter-spacing: 2px;  
+    font-family: 'Arial', sans-serif;  
+
+}
+
+
+
+.card {
+    height: 600x;
+    display: flex;
+    flex-direction: column; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); 
+    transition: box-shadow 0.3s ease-in-out; 
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 3); 
+}
+
+
+.card-img-top {
+    object-fit: cover;  
+    height: 300px;  /*image hieght */
+    width: 100%;  
+}
+
+
+.card-body {
+    flex-grow: 1;  /* so body takes up available space making cards even */
+}
