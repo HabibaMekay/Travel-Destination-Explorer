@@ -58,7 +58,7 @@
 
 .card-img-top {
     object-fit: cover;  
-    height: 300px;  /*image hieght */
+    height: 300px;  
     width: 100%;  
 }
 
@@ -138,3 +138,16 @@
 .nav-style {
     text-emphasis-color: #463129;
 }
+
+.modal-body p{
+
+line-height: 2;
+padding: 15px;
+color: rgb(66, 50, 50)
+}
+
+.modal-body h5{
+    color: #462b29;
+}
+
+
