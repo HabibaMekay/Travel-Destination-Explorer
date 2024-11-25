@@ -300,11 +300,28 @@ line-height: 2;
 
 .accordion-button{
     font-size: 1.2rem;
-    color:  #9a8080da;
+    color:  #3b3030da;
     border-color: #462b29;
 }
 
 
 .accordion-button:hover {
     background-color: #9a808061;
+}
+
+
+.accordion-button:not(.collapsed) {
+    color: rgb(54, 47, 47);
+}
+
+.accordion-button {
+    color: rgb(77, 67, 67);
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+}
+
+.accordion-button:collapsed {
+    color: rgb(77, 67, 67);
 }
