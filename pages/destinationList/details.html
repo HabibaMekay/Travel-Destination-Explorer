@@ -1,0 +1,44 @@
+<!-- details.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destination Details</title>
+</head>
+<body>
+    <div id="destinationDetails">
+        <h1 id="destinationName"></h1>
+        <p id="destinationDescription"></p>
+        <table>
+            <tr>
+                <th>Average Price Spent</th>
+                <td id="averagePrice"></td>
+            </tr>
+            <tr>
+                <th>Best Time to Visit</th>
+                <td id="bestTime"></td>
+            </tr>
+        </table>
+    </div>
+
+    <script>
+        window.onload = function() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const destinationName = urlParams.get('destination');
+            const destinations = JSON.parse(localStorage.getItem('destinations')) || [];
+
+            const destination = destinations.find(dest => dest.name === destinationName);
+
+            if (destination) {
+                document.getElementById('destinationName').textContent = destination.name;
+                document.getElementById('destinationDescription').textContent = destination.description;
+                document.getElementById('averagePrice').textContent = destination.averagePrice;
+                document.getElementById('bestTime').textContent = destination.bestTime;
+            } else {
+                document.getElementById('destinationDetails').innerHTML = '<p>Destination not found.</p>';
+            }
+        };
+    </script>
+</body>
+</html>
