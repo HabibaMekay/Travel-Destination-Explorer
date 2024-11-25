@@ -4,26 +4,75 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
+    <link href = "css">  <!--  add later -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="Blog_page.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 </head>
+
 <body>
     <header>
-        <nav>
-            <navbar>
-                <navitem> Home </navitem>
-                <navitem> Destinations </navitem>
-                <navitem> Blog </navitem>
-                <navitem> Gallery </navitem>
-                <navitem> FAQs </navitem>
-                <navitem> Contact Us </navitem>
-            </navbar>
-        </nav>
-        <h1>Travel Sis</h1>
+        <nav class="navbar navbar-expand">      
+                <a href="" class="navbar-brand">Travel Sis</a>            
+            <ul class="navbar-nav">          
+                <li class="nav-item"><a class="nav-link" href="/pages/home_page/home_page.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="/pages/destinationList/destinationList.html">Destinations</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Gallery</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">FAQs</a></li>
+                <li class="nav-item"><a class="nav-link" href="/pages/contact_us/contact_us.html">Contact Us</a></li>    
+            </ul>      
+             
+        </nav>       
     </header>
+
 
     <p> Your new ultimate travel companion. Whether you're looking for hidden gems, popular hotspots, 
         or off-the-beaten-path destinations, Travel Sis has you covered! Discover your next adventure with 
         personalized recommendations, detailed guides, and inspiring visuals. Let Travel Sis be your go-to source 
         for exploring new places, finding your perfect getaway, and making travel dreams a reality!</p>
+
+    <h4>What our users say:</h4> 
+    <div>
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <p class="card-text">"Travel Sis changed my life! I can now easily find new destinations!"</p>
+                            <p class="card-text"><small class="text-muted">- Mariam Ghandoor</small></p>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <p class="card-text">"Travel Sis changed my life! I can now easily find new destinations!"</p>
+                            <p class="card-text"><small class="text-muted">- Mariam Ghandoor</small></p>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <p class="card-text">"Travel Sis changed my life! I can now easily find new destinations!"</p>
+                            <p class="card-text"><small class="text-muted">- Mariam Ghandoor</small></p>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
 
 
     <p>"Travel Sis changed my life! I can now easily find new destinations!" - Mariam Ghandoor</p>
@@ -32,14 +81,61 @@
 
 
     <h4>Featured Destinations:</h4>
-    <img src="/images/New_York.jpg" alt="New York City"></a>
+    <!-- <img src="/images/New_York.jpg" alt="New York City"></a>
     <p class="destinationName">New York City, USA</p>
 
     <img src="/images/tokoyo.jpeg" alt="Tokyo"></a>
     <p class="destinationName">Tokyo, Japan</p>
 
     <img src="/images/kirkenes.jpg" alt="Kirkenes"></a>
-    <p class="destinationName">Kirkenes, Norway</p>
+    <p class="destinationName">Kirkenes, Norway</p> -->
+
+    <section id="gallery">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <div class="card">
+                        <img src="../../images/newzealand.jpg" class="card-img-top" alt="New Zealand">
+                        <div class="card-body">
+                            <h3 class="card-title">New Zealand’s Natural Beauty</h3>
+                            <h5>A Guide to Its Most Scenic Spots</h5>
+                            <p class="card-text">Discover New Zealand’s breathtaking landscapes, from beaches to mountains...</p>
+                            <p class="card-text"><small class="text-muted">Author: Emily Williams</small></p>
+                            <a href="#" class="btn btn-outline-success btn-sm" data-toggle="modal" data-target="#modal12">Read More</a>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <div class="card">
+                        <img src="../../images/japan.jpg" class="card-img-top" alt="travel">
+                        <div class="card-body">
+                            <h3 class="card-title">Egypt to Japan</h3>
+                            <h5>Egypt to Japan without flying, Omar Nok a blogger who traveled from Egypt to Japan but without flying!</h5>
+                            <p class="card-text">Omar Nok, a passionate travel enthusiast, embarked on an extraordinary journey from Egypt to....</p>
+                            <p class="card-text"><small class="text-muted">Maya Tarek</small></p>
+                            <a href="#" class="btn btn-outline-success btn-sm" data-toggle="modal" data-target="#modal2">Read More</a>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <div class="card">
+                        <img src="../../images/egypt2.jpg" class="card-img-top" alt="travel">
+                        <div class="card-body">
+                            <h3 class="card-title">Beyond the pyramids</h3>
+                            <h5>Visiting Egypt sounds very fun, this article will be your guide there!</h5>
+                            <p class="card-text">Egypt is renowned for its iconic pyramids, but there's so much more to...</p>
+                            <p class="card-text"><small class="text-muted">Author: Wessam Mohamed</small></p>
+                            <a href="#" class="btn btn-outline-success btn-sm" data-toggle="modal" data-target="#modal3">Read More</a>
+                            
+                        </div>
+                    </div>
+                </div>
+            
+            </div>
+        </div>
+    </section>
 
     <footer>
         <p>&copy; 2024 Travel Sis. All rights reserved.</p>
