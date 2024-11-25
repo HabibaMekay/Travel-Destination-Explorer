@@ -63,7 +63,8 @@ footer {
 
 
 .text-half {
-    background-color: #3e2b22; 
+    /* background-color: #3e2b22;  */
+    background: linear-gradient(135deg, #3e2b22, #805e4e); 
     color: white; 
     display: flex;
     flex-direction: column;
@@ -78,11 +79,8 @@ footer {
     font-size: 2rem; 
     margin-bottom: 20px; 
     font-weight: bold;
+    font-style: italic;
 }
-
-
-
-
   
   #start p {
     font-size: 1rem; 
@@ -363,7 +361,6 @@ line-height: 2;
 .accordion-button:hover {
     background-color: #9a808061;
 }
-<<<<<<< HEAD
   
 
 form {
@@ -390,7 +387,6 @@ button.subm:hover {
     background-color: #402927;
 }
 
-=======
 
 .FAQ-bckgrnd-img{
     color: white;
@@ -422,4 +418,3 @@ button.subm:hover {
 .accordion-button:collapsed {
     color: rgb(77, 67, 67);
 }
->>>>>>> c2780d78c54f050516c1b44fc02afa9a8d9cb48e
