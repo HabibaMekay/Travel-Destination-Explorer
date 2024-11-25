@@ -22,29 +22,84 @@ footer {
     text-align: center;
 }
 
-#home_pic{
-  border-radius: 50%;
-  width: 500px; height: 500px;
-  margin-bottom: 50px;
-  padding: 20px;
-}
+#home_pic {
+    border-radius: 50%;
+    width: 100%; 
+    max-width: 700px;
+    height: auto;
+    margin-bottom: 30px; /* Adds space below the image */
+    padding: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 
-#welcome {
-    width: 55%;
+  }
+  
+  #welcome {
+    width: 100%;
     display: inline-block;
     text-align: justify;
     padding-right: 20px;
+    font-size: 1.2rem; 
+  }
+
+
+#start {
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap; 
+    margin:20px;
+
 }
 
-#start{
-    margin:0px;
-    background-color: #805e4e; 
-    color: white; 
-    padding: 20px;
-    border-radius: 10px; 
-    margin-bottom: 70px;
+.image-half {
+    background-image: url('../../images/travel_sis_home.jpg'); 
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%; 
     
 }
+
+
+.text-half {
+    background-color: #3e2b22; 
+    color: white; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px; 
+    text-align: justify;
+    font-size: 1.2rem; 
+    line-height: 1.6; 
+}
+
+.text-half h3 {
+    font-size: 2rem; 
+    margin-bottom: 20px; 
+    font-weight: bold;
+}
+
+
+
+
+  
+  #start p {
+    font-size: 1rem; 
+    line-height: 1.5;
+  }
+  
+  #start .row {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    text-align: center;
+  }
+  
+  #start .col {
+    margin-top: 20px; 
+  }
+  
 
 .people{
     background-color: #805e4e; 

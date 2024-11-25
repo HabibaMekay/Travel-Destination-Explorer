@@ -40,7 +40,7 @@ cards.forEach(card => {
 
     card.addEventListener('mouseenter', () => {
         card.style.boxShadow = '0 8px 16px rgba(0, 0, 0, 3)';
-        card.style.transition = 'box-shadow 0.3s ease-in-out'; // Smooth transition
+        card.style.transition = 'box-shadow 0.3s ease-in-out'; 
     });
 
     card.addEventListener('mouseleave', () => {
