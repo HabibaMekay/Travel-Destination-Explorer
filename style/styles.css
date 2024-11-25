@@ -300,7 +300,7 @@ line-height: 2;
 
 .accordion-button{
     font-size: 1.2rem;
-    color:  #9a8080da;
+    color:  #3b3030da;
     border-color: #462b29;
 }
 
@@ -308,6 +308,7 @@ line-height: 2;
 .accordion-button:hover {
     background-color: #9a808061;
 }
+<<<<<<< HEAD
   
 
 form {
@@ -334,3 +335,36 @@ button.subm:hover {
     background-color: #402927;
 }
 
+=======
+
+.FAQ-bckgrnd-img{
+    color: white;
+    text-align: center;
+    background: linear-gradient(135deg,  #805e4e, #3e2b22); 
+    padding: 50px 20px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-size: large;
+    
+}
+
+
+
+
+.accordion-button:not(.collapsed) {
+    color: rgb(54, 47, 47);
+}
+
+.accordion-button {
+    color: rgb(77, 67, 67);
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+}
+
+.accordion-button:collapsed {
+    color: rgb(77, 67, 67);
+}
+>>>>>>> c2780d78c54f050516c1b44fc02afa9a8d9cb48e
