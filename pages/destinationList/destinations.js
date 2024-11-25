@@ -24,22 +24,70 @@ function load_dest() {
     });
 };
 
-function filterDestinations() {
-    var input, filter, cards, cardBodies, title, i, txtValue;
-    input = document.getElementById('searchBar');
-    filter = input.value.toUpperCase();
-    cards = document.getElementsByClassName('card');
-    for (i = 0; i < cards.length; i++) {
-        cardBodies = cards[i].getElementsByClassName('card-body');
-        title = cardBodies[0].getElementsByClassName("card-title")[0];
-        txtValue = title.textContent || title.innerText;
-        if (txtValue.toUpperCase().indexOf(filter) > -1) {
-            cards[i].style.display = "";
-        } else {
-            cards[i].style.display = "none";
-        }
+// function filter_destinations() {
+//     var input, filter, cards, cardBodies, title, i, txtValue;
+//     input = document.getElementById('searchBar');
+//     filter = input.value.toUpperCase();
+//     cards = document.getElementsByClassName('card');
+//     container.innerHTML = '';
+//     for (i = 0; i < cards.length; i++) {
+//         cardBodies = cards[i].getElementsByClassName('card-body');
+//         title = cardBodies[0].getElementsByClassName("card-title")[0];
+//         txtValue = title.textContent || title.innerText;
+//         if (txtValue.toUpperCase().indexOf(filter) > -1) {
+//             const cardHtml = `
+//             <div class="col-md-6">
+//                 <div class="card shadow">
+//                     <img src="${destination.image}" class="card-img-top" height="300px" alt="${destination.name}">
+//                     <div class="card-body">
+//                         <h5 class="card-title">${destination.name}</h5>
+//                         <a href="details.html?destination=${encodeURIComponent(destination.name)}" class="btn">More details</a>
+//                     </div>
+//                 </div>
+//             </div>
+//         `;
+//         container.innerHTML += cardHtml;
+//         }
+//     }
+// }
+
+function filter_destinations() {
+    const input = document.getElementById('searchBar').value.toUpperCase();
+    const destinations = JSON.parse(localStorage.getItem('destinations')) || [];
+    const container = document.getElementById('destList');
+
+    // Clear the existing content
+    container.innerHTML = '';
+
+    // Filter destinations based on input
+    const filteredDestinations = destinations.filter(destination => 
+        destination.name.toUpperCase().includes(input) || 
+        destination.description.toUpperCase().includes(input)
+    );
+
+    // Render the filtered destinations
+    filteredDestinations.forEach(destination => {
+        const cardHtml = `
+            <div class="col-md-6 mb-4">
+                <div class="card shadow">
+                    <img src="${destination.image}" class="card-img-top" height="300px" alt="${destination.name}">
+                    <div class="card-body">
+                        <h5 class="card-title">${destination.name}</h5>
+                        <p class="card-text">${destination.description.substring(0, 100)}...</p>
+                        <a href="details.html?destination=${encodeURIComponent(destination.name)}" class="btn btn-primary">More details</a>
+                    </div>
+                </div>
+            </div>
+        `;
+        container.innerHTML += cardHtml;
+    });
+
+    // Display a message if no destinations match the filter
+    if (filteredDestinations.length === 0) {
+        container.innerHTML = `<p class="text-center">No destinations match your search criteria.</p>`;
     }
 }
+
 
 const sampleDestinations = [
     {
