@@ -3,11 +3,20 @@ body {
     background-color: rgb(246, 239, 199); 
 }
 
+
+
 /* .navbar-nav {
     margin-bottom: 20px;
 
 } */
 
+#logo{
+    color: white; /* Text fill color */
+    -webkit-text-stroke: 1px #805e4e; /* Outline width and color */
+    text-align: center; /* Center the text if needed */
+    font-size: 1.5rem; /* Adjust font size as needed */
+    font-weight: bold; 
+}
 header a {
     text-decoration: none;
 }
