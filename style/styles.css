@@ -86,7 +86,7 @@ footer {
     margin-bottom: 30px;  /* space below the title */
     letter-spacing: 2px;  /* space between letters */
     font-family: 'Arial', sans-serif;  
-    color: white; 
+    
    
 
 }
@@ -290,4 +290,21 @@ color: rgb(66, 50, 50)
     color: #462b29;
 }
 
+.accordion-body{
+font-size: 1rem;
+border-top-color: #462b29;
+line-height: 1;
+color: #462b29;
+line-height: 2;
+}
 
+.accordion-button{
+    font-size: 1.2rem;
+    color:  #9a8080da;
+    border-color: #462b29;
+}
+
+
+.accordion-button:hover {
+    background-color: #9a808061;
+}
