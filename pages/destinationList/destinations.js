@@ -15,7 +15,7 @@ function load_dest() {
                     <img src="${destination.image}" class="card-img-top" height="300px" alt="${destination.name}">
                     <div class="card-body">
                         <h5 class="card-title">${destination.name}</h5>
-                        <a href="details.html?destination=${encodeURIComponent(destination.name)}" class="btn btn-primary">More details</a>
+                        <a href="details.html?destination=${encodeURIComponent(destination.name)}" class="btn">More details</a>
                     </div>
                 </div>
             </div>
