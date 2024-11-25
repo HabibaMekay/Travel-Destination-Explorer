@@ -1,0 +1,46 @@
+/* Mobile devices */
+@media (max-width: 480px) {
+    .gallery-container {
+        column-count: 1; 
+      }
+    }
+/* Tablets */
+@media (min-width: 481px) and (max-width: 768px) {
+        .gallery-container {
+            column-count: 2; 
+          }
+    }
+    
+/* Desktops */
+    
+@media (min-width: 769px) {
+        .gallery-container {
+            column-count: 4; 
+          }
+    }
+
+.galley-item { 
+    display: inline-block; /* flow next to eachother but i can still set dimensions */
+    margin-bottom: 15px; 
+    width: 100%; 
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.34);
+ 
+  }
+  
+
+.galley-item img {
+    display: block;
+    width: 100%;
+    height: auto; 
+    object-fit: cover;
+   
+  }
+  
+  
+.galley-item:hover img {
+    transform: scale(1.03);
+    box-shadow:rgba(9, 2, 28, 0.3);
+  }
+  
