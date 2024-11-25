@@ -122,14 +122,19 @@
     font-weight: bolder;
 }
 
-table{
+.details-table {
+    border: 5px;
     border-radius: 15%;
     padding: 15px;
     margin: 10px;
     outline-color: #333;
-    border-color: black;
+    border-color: pink ;
     
 }
  th{
     font-weight: bolder;
  }
+
+/* .nav-style {
+    text-emphasis-color: #333;
+} */
