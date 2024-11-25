@@ -74,7 +74,7 @@ function filter_destinations() {
                     <div class="card-body">
                         <h5 class="card-title">${destination.name}</h5>
                         <p class="card-text">${destination.description.substring(0, 100)}...</p>
-                        <a href="details.html?destination=${encodeURIComponent(destination.name)}" class="btn btn-primary">More details</a>
+                        <a href="details.html?destination=${encodeURIComponent(destination.name)}" class="btn">More details</a>
                     </div>
                 </div>
             </div>
