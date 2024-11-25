@@ -9,6 +9,7 @@
         <title>Destinations</title>
         <link rel="stylesheet" href="/style/styles.css">
         <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
         
     </head>
 <body>
@@ -26,22 +27,28 @@
          
     </nav>  
     </header>
-    
-    <div class="search-container searching-styled">
-        <input type="text" id="searchBar" class="form-control" placeholder="Search for a destination..." onkeyup="filterDestinations()">
+
+    <div class="search-section">
+        <h1 class="titles">Search for Your Dream Destination</h1>
+        <div class="search-container">
+            <input type="text" id="searchBar" placeholder="Search for a destination...">
+            <button class="search-button">
+                <i class="fas fa-search"></i>
+            </button>
+        </div>
     </div>
     
 
-    <h1 class="titles" >Find your dream destination!</h1>
+
 
     <div class="container">
-        <div class="row g-3">
-            <div class="col-md-6">
+        <div id="destList" class="row g-3">
+              <!--   <div class="col-md-6">
                 <div class="card shadow">
                     <img src="/images/kirkenes.jpg" class="card-img-top" height="300px" alt="Kirkenes">
                     <div class="card-body" id="kirkenes">
                         <h5 class="card-title">Kirkenes</h5>
-                        <a class="view-more-buttons" style="color: rgb(73, 55, 43)" onclick="saveDestination('Kirkenes')">More details</a>
+                        <a class="view-more-buttons" style="color: rgb(73, 55, 43)" onclick=" saveDestination('Kirkenes')">More details</a>
                     </div>
                 </div>
             </div>
@@ -50,7 +57,7 @@
                     <img src="/images/New_York.jpg" class="card-img-top"  height="300px" alt="NewYork">
                     <div class="card-body">
                         <h5 class="card-title">NewYork</h5>
-                        <a class="btn btn-primary" style="color: rgb(73, 55, 43)">More details</a>
+                        <a class="btn btn-primary" style="color: rgb(73, 55, 43)" onclick="saveDestination('NewYork')">More details</a>
                     </div>
                 </div>
             </div>
@@ -59,7 +66,7 @@
                     <img src="/images/tokoyo.jpeg" class="card-img-top" height="300px" alt="Tokyo">
                     <div class="card-body">
                         <h5 class="card-title">Tokyo</h5>
-                        <a class="btn btn-primary" style="color: rgb(73, 55, 43)">More details</a>
+                        <a class="btn" style="color: rgb(73, 55, 43)">More details</a>
                     </div>
                 </div>
             </div>
@@ -68,7 +75,7 @@
                     <img src="/images/egypt.jpg" class="card-img-top"  height="300px" alt="Egypt">
                     <div class="card-body">
                         <h5 class="card-title">Egypt</h5>
-                        <a class="btn btn-primary" style="color: rgb(73, 55, 43)">More details</a>
+                        <a class="btn" style="color: rgb(73, 55, 43)">More details</a>
                     </div>
                 </div>
             </div>
@@ -77,7 +84,7 @@
                     <img src="/images/maldives.webp" class="card-img-top"  height="300px" alt="Maldives">
                     <div class="card-body">
                         <h5 class="card-title">Maldives</h5>
-                        <a class="btn btn-primary" style="color: rgb(73, 55, 43)">More details</a>
+                        <a class="btn" style="color: rgb(73, 55, 43)">More details</a>
                     </div>
                 </div>
             </div>
@@ -86,17 +93,20 @@
                     <img src="/images/paris.jpg" class="card-img-top"  height="300px" alt="Paris">
                     <div class="card-body">
                         <h5 class="card-title">Paris</h5>
-                        <a style="color: rgb(73, 55, 43)">More details</a>
+                        <a class="btn" style="color: rgb(73, 55, 43)">More details</a>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </div>
     </div>
 
     <script src="destinations.js"></script>
+
     <footer>
         <p>&copy; 2024 Travel Sis. All rights reserved.</p>
     </footer>
+
+    
     
 </body>
 </html>
