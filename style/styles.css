@@ -1,3 +1,64 @@
+body {
+    padding: 20px;
+    background-color: rgb(246, 239, 199); 
+}
+
+.navbar-nav {
+    margin-bottom: 20px;
+
+}
+
+header a {
+    color: white !important; 
+}
+
+
+section {
+    margin-top: 20px;
+}
+
+footer {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#home_pic{
+  border-radius: 50%;
+  width: 500px; height: 500px;
+  margin-bottom: 50px;
+  padding: 20px;
+}
+
+#welcome {
+    width: 55%;
+    display: inline-block;
+    text-align: justify;
+    padding-right: 20px;
+}
+
+#start{
+    margin:0px;
+    background-color: #805e4e; 
+    color: white; 
+    padding: 20px;
+    border-radius: 10px; 
+    margin-bottom: 70px;
+    
+}
+
+.people{
+    background-color: #805e4e; 
+    border-radius: 7px;
+    color:whitesmoke;
+}
+
+.testimonial-author {
+    /* color: rgb(255, 237, 211) !important; */
+    color:#805e4e!important;
+}
+
+
+
 .jumbotron {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../images/background.jpg");
     background-size: cover;
@@ -25,6 +86,7 @@
     margin-bottom: 30px;  /* space below the title */
     letter-spacing: 2px;  /* space between letters */
     font-family: 'Arial', sans-serif;  
+    color: white; 
    
 
 }
@@ -49,6 +111,7 @@
     flex-direction: column; 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); 
     transition: box-shadow 0.3s ease-in-out; 
+    border-radius: 10px;
 }
 
 .card:hover {
@@ -67,6 +130,11 @@
     flex-grow: 1;  /* so body takes up available space making cards even */
 }
 
+
+.btn{
+    background-color: #805e4e !important;
+    color:white !important;
+}
 
 
 /* Mobile devices */
@@ -131,12 +199,27 @@
     border-color: pink ;
     
 }
- th{
-    font-weight: bolder;
- }
 
-.nav-style {
-    text-emphasis-color: #463129;
+.details-table-info {
+    font-family: cursive;
+}
+
+.nav-style /*put this in destinationList, but not working yet */
+{
+    color: #463129;
+}
+
+.titles {
+    padding: 40px;
+    color:#775040;
+    font-style: italic;
+    font-weight: bolder ;
+}
+
+.view-more-buttons /*not working*/ {
+    color: #775040;
+    border-radius: 20%;
+
 }
 
 .modal-body p{
