@@ -114,4 +114,27 @@
     transform: scale(1.03);
     box-shadow:rgba(9, 2, 28, 0.3);
   }
-  
+
+.searching-styled {
+    margin: 10px;
+    padding: 10px;
+    font-size: large;
+    font-weight: bolder;
+}
+
+.details-table {
+    border: 5px;
+    border-radius: 15%;
+    padding: 15px;
+    margin: 10px;
+    outline-color: #333;
+    border-color: pink ;
+    
+}
+ th{
+    font-weight: bolder;
+ }
+
+.nav-style {
+    text-emphasis-color: #463129;
+}
