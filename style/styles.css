@@ -3,14 +3,14 @@ body {
     background-color: rgb(246, 239, 199); 
 }
 
-.navbar-nav {
+/* .navbar-nav {
     margin-bottom: 20px;
 
-}
+} */
 
-header a {
+/* header a {
     color: white !important; 
-}
+} */
 
 
 section {
@@ -192,11 +192,11 @@ footer {
 
 .details-table {
     border: 5px;
-    border-radius: 15%;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     padding: 15px;
     margin: 10px;
-    outline-color: #333;
-    border-color: pink ;
+    background-color: #aa8181;
     
 }
 
@@ -204,10 +204,10 @@ footer {
     font-family: cursive;
 }
 
-.nav-style /*put this in destinationList, but not working yet */
-{
+/* .nav-style /*put this in destinationList, but not working yet */
+/* {
     color: #463129;
-}
+}  */
 
 .titles {
     padding: 40px;
@@ -217,8 +217,9 @@ footer {
 }
 
 .view-more-buttons /*not working*/ {
+    border-color: #463129;
     color: #775040;
-    border-radius: 20%;
+    border-radius: 35%;
 
 }
 
