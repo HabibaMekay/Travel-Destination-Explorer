@@ -32,7 +32,7 @@
         <h1 class="titles">Search for Your Dream Destination</h1>
         <div class="search-container">
             <input type="text" id="searchBar" placeholder="Search for a destination...">
-            <button class="search-button">
+            <button class="search-button" onclick="filter_destinations()">
                 <i class="fas fa-search"></i>
             </button>
         </div>
@@ -42,13 +42,13 @@
 
 
     <div class="container">
-        <div class="row g-3">
-            <div class="col-md-6">
+        <div id="destList" class="row g-3">
+              <!--   <div class="col-md-6">
                 <div class="card shadow">
                     <img src="/images/kirkenes.jpg" class="card-img-top" height="300px" alt="Kirkenes">
                     <div class="card-body" id="kirkenes">
                         <h5 class="card-title">Kirkenes</h5>
-                        <a class="view-more-buttons" style="color: rgb(73, 55, 43)" onclick="saveDestination('Kirkenes')">More details</a>
+                        <a class="view-more-buttons" style="color: rgb(73, 55, 43)" onclick=" saveDestination('Kirkenes')">More details</a>
                     </div>
                 </div>
             </div>
@@ -57,7 +57,7 @@
                     <img src="/images/New_York.jpg" class="card-img-top"  height="300px" alt="NewYork">
                     <div class="card-body">
                         <h5 class="card-title">NewYork</h5>
-                        <a class="" style="color: rgb(73, 55, 43)">More details</a>
+                        <a class="btn btn-primary" style="color: rgb(73, 55, 43)" onclick="saveDestination('NewYork')">More details</a>
                     </div>
                 </div>
             </div>
@@ -96,7 +96,7 @@
                         <a class="btn" style="color: rgb(73, 55, 43)">More details</a>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </div>
     </div>
 

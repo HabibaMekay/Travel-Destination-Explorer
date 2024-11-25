@@ -29,6 +29,9 @@
     </nav>  
     </header>
     <div id="destinationDetails">
+        <div class="details-table-image" id="bckimg">
+            <img id="iimgage" class="img-fluid w-100" alt="Destination Image" style="border-radius: 15px;">
+        </div>
         <h1 id="destinationName"></h1>
         <p id="destinationDescription"></p>
         <table class="table details-table">
@@ -47,19 +50,25 @@
         window.onload = function() {
             const urlParams = new URLSearchParams(window.location.search);
             const destinationName = urlParams.get('destination');
+    
             const destinations = JSON.parse(localStorage.getItem('destinations')) || [];
-
             const destination = destinations.find(dest => dest.name === destinationName);
-
+    
             if (destination) {
+                // Correctly set the image source
+                document.getElementById('iimgage').src = destination.image;
+    
+                // Set the name, description, price, and best time
                 document.getElementById('destinationName').textContent = destination.name;
                 document.getElementById('destinationDescription').textContent = destination.description;
                 document.getElementById('averagePrice').textContent = destination.averagePrice;
                 document.getElementById('bestTime').textContent = destination.bestTime;
             } else {
+                // Handle the case where the destination is not found
                 document.getElementById('destinationDetails').innerHTML = '<p>Destination not found.</p>';
             }
         };
     </script>
+    
 </body>
 </html>
