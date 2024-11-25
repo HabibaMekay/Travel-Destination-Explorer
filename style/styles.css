@@ -310,11 +310,14 @@ line-height: 2;
 }
 
 .FAQ-bckgrnd-img{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
     color: white;
     text-align: center;
+    background: linear-gradient(135deg,  #805e4e, #3e2b22); 
+    padding: 50px 20px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-size: large;
+    
 }
 
