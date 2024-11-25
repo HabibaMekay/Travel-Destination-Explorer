@@ -309,6 +309,20 @@ line-height: 2;
     background-color: #9a808061;
 }
 
+.FAQ-bckgrnd-img{
+    color: white;
+    text-align: center;
+    background: linear-gradient(135deg,  #805e4e, #3e2b22); 
+    padding: 50px 20px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-size: large;
+    
+}
+
+
+
 
 .accordion-button:not(.collapsed) {
     color: rgb(54, 47, 47);
