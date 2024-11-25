@@ -131,10 +131,25 @@
     border-color: pink ;
     
 }
- th{
-    font-weight: bolder;
- }
 
-.nav-style {
-    text-emphasis-color: #463129;
+.details-table-info {
+    font-family: cursive;
+}
+
+.nav-style /*put this in destinationList, but not working yet */
+{
+    color: #463129;
+}
+
+.titles {
+    padding: 40px;
+    color:#775040;
+    font-style: italic;
+    font-weight: bolder ;
+}
+
+.view-more-buttons /*not working*/ {
+    color: #775040;
+    border-radius: 20%;
+
 }
