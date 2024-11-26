@@ -9,8 +9,10 @@
         <script src="contact_us.js" defer></script>
         <title>Contact Us</title>
         <link rel="stylesheet" href="/style/styles.css">
+        <link rel="stylesheet" href="contact_us.css">
         <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     </head>
+    
     <body>
         <header>
             <nav class="navbar navbar-expand">      
@@ -26,20 +28,30 @@
              
         </nav>  
         </header>
+        <div class="FAQ-bckgrnd-img" >
+
         
-        <p>Contact Us:</p>
+            <h1 class="bck-img" fw-bold>Contact Us</h1>
+            <p>Need Assistance? We're Just a Message Away!</p>
+      
+          
+        </div>
+  
+        <div class="c">
+    <div class ="centerform">
         <form onsubmit="return validateForm()">
-            <label>Enter Name:</label><br>
-            <input type="text" class="textb" id="name"><br>
-            <label>Enter Email:</label><br>
-            <input type="text" class="textb" id="email"><br>
-            <label>Enter Message:</label><br>
+            <label style="font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; color: #3e2b22;">Enter Name:</label><br>
+            <input type="text" class="textb" id="name"><br><br>
+            <label style="font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; color: #3e2b22;">Enter Email:</label><br>
+            <input type="text" class="textb" id="email"><br><br>
+            <label style="font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; color: #3e2b22;">Enter Message:</label><br>
             <textarea class="textb" id="message" rows="5" cols="40" placeholder="Type your message here..."></textarea><br>
             <button type="submit" class="subm">Submit</button>
         </form>
-
+    </div>
         <footer>
             <p>&copy; 2024 Travel Sis. All rights reserved.</p>
         </footer>
     </body>
+</div>
 </html>
