@@ -6,6 +6,11 @@ function validateForm() {
     const messageformat = /^[A-Za-z0-9\s]+$/;
     const emailRegex = /^[a-zA-Z0-9._-]+@gmail\.com$/;
     
+    if (name == "" || email == "" || message == "") 
+        {
+            alert("Please fill out all fields.");
+            return false; // do not submit
+        }
   
     if (!CharName.test(name)) 
     {
@@ -19,17 +24,14 @@ function validateForm() {
         return false; // do not submit
     }
     
-    if (!messageformat.test(message)) 
+    else if (!messageformat.test(message)) 
     {
         alert("message must contain alphabetic and numerical characters");
         return false; // do not submit
     }
 
-    else if (name === "" || email === "" || message === "") 
-    {
-        alert("Please fill out all fields.");
-        return false; // do not submit
-    }
+  
+    
 
     alert("Form is filled successfully.");
     return true; // submit
