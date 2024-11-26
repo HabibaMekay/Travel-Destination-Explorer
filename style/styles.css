@@ -5,10 +5,10 @@ body {
 
 
 
-/* .navbar-nav {
-    margin-bottom: 20px;
+.nav-link {
+    color: #805e4e !important;
 
-} */
+}
 
 #logo{
     color: white; /* Text fill color */
