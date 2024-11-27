@@ -11,10 +11,10 @@ body {
 }
 
 #logo{
-    color: white; /* Text fill color */
+    color: white; 
     -webkit-text-stroke: 1px #805e4e; /* Outline width and color */
-    text-align: center; /* Center the text if needed */
-    font-size: 1.5rem; /* Adjust font size as needed */
+    text-align: center;
+    font-size: 1.5rem; 
     font-weight: bold; 
 }
 header a {
@@ -120,23 +120,7 @@ footer {
 
 
 
-/* .jumbotron {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../images/background.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    color: white;
-    text-align: center;
-    
-}
 
-.jumbotron h1 {
-    text-shadow: 2px 2px 2px black; 
-}
-
-.jumbotron p {
-    text-shadow: 1px 1px 2px black; 
-} */
 
 
 .first-title{
@@ -144,8 +128,8 @@ footer {
     font-size: 2.5rem;
     color: #333;  
     font-weight: bold;
-    margin-bottom: 30px;  /* space below the title */
-    letter-spacing: 2px;  /* space between letters */
+    margin-bottom: 30px;  
+    letter-spacing: 2px;  
     font-family: 'Arial', sans-serif;  
     
    
@@ -384,9 +368,9 @@ footer {
 
 }
 
-.modal-body p{
+.modal-body article{
 
-line-height: 2;
+line-height: 1.5;
 padding: 15px;
 color: rgb(66, 50, 50)
 }
