@@ -210,6 +210,9 @@ footer {
     color: #463129;
 }  */
 
+
+
+
 .titles {
         text-align: center;
         padding: 20px;
@@ -305,6 +308,31 @@ line-height: 2;
 .accordion-button:hover {
     background-color: #9a808061;
 }
+  
+form {
+    background: #9a8080da;
+    border: 2px solid #f8c1c4;
+    border-radius: 12px;
+    padding: 20px;
+    max-width: 400px;
+    margin:0;
+    box-shadow: 0px 4px 6px rgba(63, 44, 44, 0.1);
+}
+
+button.subm {
+    background-color: #956552;
+    color: #462b29;
+    border: 12;
+    border-radius: 8px;
+    padding: 10px 20px;
+    cursor: pointer;
+
+}
+
+button.subm:hover {
+    background-color: #402927;
+}
+
 
 .FAQ-bckgrnd-img{
     color: white;
@@ -317,6 +345,9 @@ line-height: 2;
     font-size: large;
     
 }
+
+
+
 
 .accordion-button:not(.collapsed) {
     color: rgb(54, 47, 47);
@@ -346,3 +377,4 @@ line-height: 2;
       transform: translateY(0);
     }
   }
+  
