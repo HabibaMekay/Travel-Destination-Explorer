@@ -56,7 +56,7 @@ footer {
 #start {
     height: 100vh;
     display: flex;
-    flex-wrap:  nowrap;
+    flex-wrap: wrap;
     margin:20px;
     
 
@@ -319,7 +319,6 @@ footer {
 /* {
     color: #463129;
 }  */
-
 
 
 
