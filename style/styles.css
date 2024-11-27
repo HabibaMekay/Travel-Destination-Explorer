@@ -195,8 +195,12 @@ footer {
     
 }
 
-
-
+/* Added this so all content will be centered and have white space from both sides :)*/
+#destinationDetails {
+    width: 70%; 
+    margin: 0 auto; 
+    padding: 20px 0; 
+}
 
 .details-table-info {
     font-family: cursive;
