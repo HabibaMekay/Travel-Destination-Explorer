@@ -136,7 +136,7 @@ footer {
 .first-title{
     text-align: center;
     font-size: 2.5rem;
-    color: #333;  
+    color: #3e2b22;
     font-weight: bold;
     margin-bottom: 30px;  
     letter-spacing: 2px;  
@@ -150,7 +150,7 @@ footer {
 
     text-align: center;
     font-size: 2.5rem;
-    color: #333;  
+    color: #3e2b22;  
     font-weight: bold;
     margin-bottom: 30px; 
     letter-spacing: 2px;  
@@ -316,7 +316,7 @@ footer {
         text-align: center;
         padding: 20px;
         color: white;
-        font-style: italic;
+        /* font-style: italic; */
         font-weight: bold;
         font-size: 2rem;
         margin-bottom: 30px;
