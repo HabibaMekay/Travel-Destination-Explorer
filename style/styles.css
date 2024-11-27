@@ -185,17 +185,23 @@ footer {
 
 
 .details-table {
-    border: 5px;
+    border: 5px ;
     border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     padding: 15px;
-    margin: 10px;
-    background-color: #aa8181;
+    margin: 8px;
+    background-color: #aa81819b ;
+    border-color: white;
+
     
 }
 
+
+
+
 .details-table-info {
     font-family: cursive;
+
+    color:white;
 }
 
 .details-table-image {
@@ -207,6 +213,36 @@ footer {
 #iimgage {
     max-height: 100%;
     object-fit: cover; 
+}
+
+.details-table tr:hover {
+    background-color: #706868a3;
+    transition: background-color 0.3s ease;
+}
+
+#destinationName{
+    
+    text-align: center;
+    margin-bottom: 10px ;/*space belo it*/
+    color: #4a3f35;
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 20px 0;
+
+}
+
+#destinationDescription{
+    font-size: 1.5rem;
+    text-align: justify;
+    margin: 0 auto; /* center the description*/
+    line-height: 1.5;
+    margin: 20px ;
+    color: #4a3f35;
+    border-bottom: 2px solid #e6d8c3; 
+    padding-bottom: 10px; 
+
+    border-top: 2px solid #e6d8c3; 
+    padding-top: 10px; 
 }
 
 /* .nav-style /*put this in destinationList, but not working yet */
@@ -381,3 +417,5 @@ button.subm:hover {
       transform: translateY(0);
     }
   }
+
+
