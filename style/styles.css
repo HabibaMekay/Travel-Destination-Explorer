@@ -460,7 +460,9 @@ button.subm:hover {
     
 }
 
-
+.accordion-button:hover{
+    background-color: #9565526e;
+}
 
 
 .accordion-button:not(.collapsed) {
