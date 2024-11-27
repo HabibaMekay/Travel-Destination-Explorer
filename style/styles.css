@@ -58,6 +58,7 @@ footer {
     display: flex;
     flex-wrap: wrap; 
     margin:20px;
+    
 
 }
 
@@ -68,7 +69,9 @@ footer {
     background-repeat: no-repeat;
     height: 100%; 
     
+    
 }
+
 
 
 .text-half {
@@ -495,3 +498,10 @@ button.subm:hover {
   }
 
 
+
+  @media (max-width: 768px) {
+    .image-half {
+      height: 480px; 
+    }
+  }
+  

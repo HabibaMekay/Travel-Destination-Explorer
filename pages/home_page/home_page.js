@@ -44,13 +44,17 @@ setInterval(() => {
 
       // Create the card element
       const card = document.createElement("div");
-      card.className = "col-md-3 make-it-fade";
+      // card.className = "col-md-3 make-it-fade"; commented this and used the one below for responsivness
+      card.className = "col-12 col-sm-6 col-md-4 col-lg-3 make-it-fade";
+
       //card.style = " opacity: 0; transform: translateY(20px); animation: fadeIn 0.5s ease-in-out forwards";
 
       // Set the card content
       card.innerHTML = `
             <div class="card shadow" style="border: 0.5px solid #3e2b22;">
-                <img src="${people[i].picture}" class="card-img-top" height="300px" alt="${people[i].name}">
+                <img src="${people[i].picture}" class="card-img-top" height="300px" alt="${people[i].name}"> 
+        
+
                 <div class="card-body">
                     <h6 style="color: #3e2b22" class="card-title">"${people[i].words}"</h6>
                     <p class="card-text"><small class="testimonial-author">- ${people[i].name}</small></p>
