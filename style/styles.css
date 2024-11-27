@@ -442,6 +442,7 @@ form {
     border-radius: 8px; 
     border-color: #463129;
     box-shadow: #463129;
+    border: 1.5px solid #463129;
 }
 
 button.subm {
@@ -451,6 +452,8 @@ button.subm {
     padding: 10px 20px;
     cursor: pointer;
     box-shadow: none;
+    margin-top: 15px;
+    border:none;
 }
 
 button.subm:hover {
