@@ -56,11 +56,24 @@ footer {
 #start {
     height: 100vh;
     display: flex;
-    flex-wrap: wrap; 
+    flex-wrap:  nowrap;
     margin:20px;
     
 
 }
+
+
+
+@media (max-width: 768px) { 
+    #start {
+        flex-direction: column; 
+        height: auto; 
+    }
+    .image-half, .text-half {
+        height: 50vh; 
+    }
+}
+
 
 
 
@@ -127,8 +140,6 @@ footer {
     /* color: rgb(255, 237, 211) !important; */
     color:#805e4e!important;
 }
-
-
 
 
 
