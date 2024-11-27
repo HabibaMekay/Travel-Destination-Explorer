@@ -506,6 +506,6 @@ button.subm:hover {
 
   @media (max-width: 768px) {
     .image-half {
-      height: 100%; 
+      height: 480px; 
     }
   }
