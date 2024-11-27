@@ -395,23 +395,27 @@ color: rgb(66, 50, 50)
     color: #462b29;
 }
 
-.accordion-body{
-font-size: 1rem;
-border-top-color: #462b29;
-line-height: 1;
-color: #462b29;
-line-height: 2;
+.accordion-button:not(.collapsed) {
+    color: rgb(54, 47, 47) !important;
+    background-color: #9a808061 ;
 }
 
-.accordion-button{
-    font-size: 1.2rem;
-    color:  #3b3030da;
-    border-color: #462b29;
+.accordion-button {
+    color: rgb(77, 67, 67);
 }
 
+.accordion-button:focus {
+    box-shadow: none;
+    color: rgb(77, 67, 67 ) !important; 
+}
 
-.accordion-button:hover {
-    background-color: #9a808061;
+.accordion-button:collapsed {
+    color: rgb(77, 67, 67);
+    
+}
+
+.accordion-button:not(.collapsed)::after {
+    filter: brightness(0) saturate(100%) invert(27%) sepia(17%) saturate(420%) hue-rotate(0deg) brightness(95%) contrast(85%);
 }
   
 form {
