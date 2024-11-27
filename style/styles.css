@@ -199,10 +199,14 @@ footer {
 }
 
 .details-table-image {
-    background-image: linear-gradient(rgba(102, 102, 102, 0.5), rgba(0, 0, 0, 0.5));
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+    
+    height: 350px; 
+    
+}
+
+#iimgage {
+    max-height: 100%;
+    object-fit: cover; 
 }
 
 /* .nav-style /*put this in destinationList, but not working yet */
@@ -377,4 +381,3 @@ button.subm:hover {
       transform: translateY(0);
     }
   }
-  
