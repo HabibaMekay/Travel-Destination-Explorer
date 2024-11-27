@@ -414,15 +414,37 @@ line-height: 2;
     background-color: #9a808061;
 }
   
-/* form {
-    background: #9a8080da;
-    border: 2px solid #f8c1c4;
+form {
+    background-color: white;
+    border: 2px solid #4f2f2d;
     border-radius: 12px;
     padding: 20px;
-    max-width: 400px;
-    margin:0;
-    box-shadow: 0px 4px 6px rgba(63, 44, 44, 0.1);
-} */
+    max-width: 600px;
+    box-shadow: 0px 4px 6px rgb(85, 60, 60);
+    width: 100%;
+}
+
+
+.centerform {
+    display: flex;          
+    justify-content: center; 
+    align-items: center;    
+    min-height: 100vh;     
+    padding: 20px;          
+}
+
+.c
+{
+    background-image: url("../../images/bg.jpg");
+    border-radius: 12px;
+
+}
+
+.textb {
+    border-radius: 8px; 
+    border-color: #463129;
+    box-shadow: #463129;
+}
 
 button.subm {
     background-color: #956552;
@@ -434,7 +456,7 @@ button.subm {
 }
 
 button.subm:hover {
-    background-color: #402927;
+    background-color: #956552ce;
 } 
 
 
