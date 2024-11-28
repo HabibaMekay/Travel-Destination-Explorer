@@ -1,6 +1,6 @@
 body {
     padding: 20px;
-    background-color: rgb(246, 239, 199); 
+    background-color: white; 
 }
 
 
@@ -10,72 +10,19 @@ body {
 
 }
 
+
 #logo{
     color: white; 
-    -webkit-text-stroke: 1px #805e4e; /* Outline width and color */
-    text-align: center;
+    -webkit-text-stroke: 1px #805e4e; 
     font-size: 1.5rem; 
     font-weight: bold; 
 }
-header a {
-    text-decoration: none;
-}
 
-
-section {
-    margin-top: 20px;
-}
 
 footer {
     margin-top: 20px;
     text-align: center;
 }
-
-#home_pic {
-    border-radius: 50%;
-    width: 100%; 
-    max-width: 700px;
-    height: auto;
-    margin-bottom: 30px; /* Adds space below the image */
-    padding: 10px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-
-  }
-  
-  #welcome {
-    width: 100%;
-    display: inline-block;
-    text-align: justify;
-    padding-right: 20px;
-    font-size: 1.2rem; 
-  }
-
-
-#start {
-    height: 100vh;
-    display: flex;
-    flex-wrap: wrap;
-    margin:20px;
-    
-
-}
-
-
-
-@media (max-width: 768px) { 
-    #start {
-        flex-direction: column; 
-        height: auto; 
-    }
-    .image-half, .text-half {
-        height: 50vh; 
-    }
-}
-
-
-
 
 
 .image-half {
@@ -84,18 +31,10 @@ footer {
     background-position: center;
     background-repeat: no-repeat;
     height: 100%; 
-    
-    
+      
 }
 
-
-
-
-
-
-
 .text-half {
-    /* background-color: #3e2b22;  */
     background: linear-gradient(135deg, #3e2b22, #805e4e); 
     color: white; 
     display: flex;
@@ -114,21 +53,30 @@ footer {
     font-style: italic;
 }
   
-  #start p {
+#start p {
     font-size: 1rem; 
     line-height: 1.5;
   }
   
-  #start .row {
+#start {
+    height: 100vh;
     display: flex;
-    justify-content: center; 
-    align-items: center;
-    text-align: center;
-  }
-  
-  #start .col {
-    margin-top: 20px; 
-  }
+    flex-wrap: wrap;
+    margin:20px;
+   
+}
+
+@media (max-width: 768px) { 
+    #start {
+        flex-direction: column; 
+        height: auto; 
+    }
+    .image-half, .text-half {
+        height: 50vh; 
+    }
+}
+
+
 
 .people{
     background-color: #805e4e; 
