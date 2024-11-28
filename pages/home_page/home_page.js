@@ -35,10 +35,8 @@ const peopleDisplay = document.getElementById("people-display");
 let j = 0;
 
 setInterval(() => {
-  // Clear the container
   peopleDisplay.innerHTML = "";
 
-  // Loop through the people array
   for (let i = 0; i < people.length; i++) {
     if (i % 2 === j % 2) {
 
@@ -49,7 +47,6 @@ setInterval(() => {
 
       //card.style = " opacity: 0; transform: translateY(20px); animation: fadeIn 0.5s ease-in-out forwards";
 
-      // Set the card content
       card.innerHTML = `
             <div class="card shadow" style="border: 0.5px solid #3e2b22;">
                 <img src="${people[i].picture}" class="card-img-top" height="300px" alt="${people[i].name}"> 
